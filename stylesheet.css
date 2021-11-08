@@ -1,0 +1,128 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    background-image: url(./images/bg-pattern-bottom.svg);
+    background-color: var(--Dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    max-width: 1440px;
+}
+
+.container {
+    font-size: 18px;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 380px;
+    justify-content: center;
+    align-self: center;
+    border-radius: 14px 14px 14px 14px;
+    background-color: white;
+    box-shadow: 1px -1px 62px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px -1px 62px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 62px -14px rgba(0,0,0,0.75);
+}
+
+svg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.card > h1 {
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.card > h1, .card > h2 {
+    font-size: 18px;
+}
+
+.container > svg {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    display: block;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    text-align: center;
+}
+
+span {
+    color: var(--Dark-gray);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: var(--Dark-gray);
+    padding-top: 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(194, 194, 194);
+    text-align: center;
+}
+
+footer > h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    margin-right: 25px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.def {
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--Dark-gray);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px) {
+    .container {
+        width: 94%;
+        margin-top: 150px;
+        height: 400px;
+    }
+    .card > h1 {
+        margin-top: 60px;
+    }
+    h2 {
+        margin-bottom: 10px;
+    }
+    img {
+        top: 290px;
+        height: 130px;
+        width: 130px;
+    }
+    footer {
+        margin-top: 30px;
+    }
+}
